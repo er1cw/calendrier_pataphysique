@@ -64,7 +64,7 @@ CAL_PAT = dict()
 CONVERSIONS = dict()
 num_mois = 0
 for i in range(2, len(TOUT)):
-    data = TOUT[i].rstrip().split(':')
+    data = TOUT[i].rstrip().split(';')
     if num_mois in CAL_PAT and data[0] == CAL_PAT[num_mois]['nom']:
         CAL_PAT[num_mois]['jours'].append(data[3])
     else:
